@@ -2,17 +2,23 @@
 
 골굴사의 선무도를 알리는 브라우저 미니게임입니다. 단일 HTML 파일로 만들었으며 PC와 모바일에서 플레이할 수 있습니다.
 
-## 실행
+## 기능
 
-`index.html`을 브라우저에서 열면 됩니다.
+- AI 대전 상대 3단계: 입문, 숙련, 고수
+- 승리·경기 점수에 따른 엽전 보상
+- 엽전으로 공격력·수비력·집중력 강화, 강화에 따라 랭크 상승
+- 브라우저에 저장하는 수련 프로필과 기기 내 랭킹
+- 노트북 키보드와 모바일 터치 조작
 
 ## 조작
 
 - 노트북: A/D 이동, W 도약, J 손기술, K 발기술, L 막기, Space 호흡 집중
 - 모바일: 화면 아래 터치 버튼
 
-AI 상대는 게임 안의 규칙 기반 로직으로 움직이고, 타이밍·균형·호흡을 바탕으로 점수를 표시합니다. 실제 선무도 수련법을 가르치거나 재현하는 콘텐츠는 아닙니다.
+## 저장 및 랭킹 범위
+
+프로필과 랭킹은 현재 브라우저의 localStorage에 저장됩니다. 같은 브라우저의 프로필끼리만 랭킹이 공유됩니다. IP 주소는 수집하지 않습니다. 모든 방문자가 공유하는 온라인 랭킹과 계정 로그인은 서버/데이터베이스 연결이 필요합니다.
 
 ## GitHub Pages 게시
 
-저장소에서 **Settings → Pages → Build and deployment → Deploy from a branch**를 선택하고, Branch를 **main**, 폴더를 **/(root)**로 설정한 뒤 Save를 누르면 됩니다. 게시 주소는 보통 `https://mldld3276-wq.github.io/sunmudo-golgulsa-game/`입니다. 첫 게시에는 잠시 시간이 걸릴 수 있습니다.
+저장소에서 **Settings → Pages → Build and deployment → Deploy from a branch**를 선택하고, Branch를 **main**, 폴더를 **/(root)**로 설정합니다. 게시 주소는 `https://mldld3276-wq.github.io/sunmudo-golgulsa-game/`입니다.
